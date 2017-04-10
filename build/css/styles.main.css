@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url("../img/main-bg.png"); }
+
+.container {
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .container {
+      width: 100%; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #637076; }
+
+.clearfix {
+  clear: both; }
+
+header .header {
+  width: 100%;
+  height: 714px;
+  position: relative;
+  background-image: url("../img/header-bg.png");
+  transition: background-position 1s ease; }
+  header .header nav {
+    width: 100%;
+    height: 110px;
+    background-color: #141a1d; }
+    @media screen and (max-width: 1150px) {
+      header .header nav {
+        height: 55px; } }
+    @media screen and (max-width: 900px) {
+      header .header nav {
+        height: 105px;
+        text-align: center; } }
+    @media screen and (max-width: 640px) {
+      header .header nav {
+        padding-bottom: 20px;
+        height: auto;
+        background-color: rgba(20, 26, 29, 0.5); } }
+    header .header nav .logo {
+      float: left; }
+      @media screen and (max-width: 900px) {
+        header .header nav .logo {
+          float: none; } }
+      header .header nav .logo .big-logo {
+        height: 110px;
+        display: block; }
+        @media screen and (max-width: 1150px) {
+          header .header nav .logo .big-logo {
+            display: none; } }
+      header .header nav .logo .small-logo {
+        height: 55px;
+        display: none; }
+        @media screen and (max-width: 1149px) {
+          header .header nav .logo .small-logo {
+            display: block; } }
+    header .header nav .main-nav {
+      margin: 50px 16px 0 0;
+      float: right; }
+      @media screen and (max-width: 1149px) {
+        header .header nav .main-nav {
+          margin: 20px 16px 0 0; } }
+      @media screen and (max-width: 900px) {
+        header .header nav .main-nav {
+          float: none; } }
+      @media screen and (max-width: 900px) {
+        header .header nav .main-nav {
+          float: none;
+          display: inline-block; } }
+      @media screen and (max-width: 490px) {
+        header .header nav .main-nav {
+          float: left;
+          display: inline-block;
+          text-align: left; } }
+      header .header nav .main-nav li {
+        margin-right: 10px;
+        display: inline-block; }
+        @media screen and (max-width: 640px) {
+          header .header nav .main-nav li {
+            margin: 0 0 10px 0;
+            display: block; } }
+        header .header nav .main-nav li:last-child {
+          margin: 0; }
+        header .header nav .main-nav li:first-child {
+          position: relative; }
+          header .header nav .main-nav li:first-child:hover .dropdown {
+            height: 245px;
+            transition: all 1s ease; }
+            @media screen and (max-width: 640px) {
+              header .header nav .main-nav li:first-child:hover .dropdown {
+                top: 0;
+                transition: all 1s ease; } }
+          header .header nav .main-nav li:first-child .dropdown {
+            width: 200px;
+            height: 0;
+            overflow: hidden;
+            background-color: #141a1d;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+            position: absolute;
+            top: 60px;
+            left: -20px;
+            z-index: 1000;
+            transition: all 2s ease; }
+            @media screen and (max-width: 1149px) {
+              header .header nav .main-nav li:first-child .dropdown {
+                top: 30px; } }
+            @media screen and (max-width: 640px) {
+              header .header nav .main-nav li:first-child .dropdown {
+                width: 180px;
+                height: 245px;
+                top: -999px;
+                left: 110%; } }
+            header .header nav .main-nav li:first-child .dropdown li {
+              margin: 10px 0 0 0;
+              padding-left: 30px;
+              display: block;
+              text-align: left; }
+              header .header nav .main-nav li:first-child .dropdown li:hover {
+                background-color: #00a1df; }
+              header .header nav .main-nav li:first-child .dropdown li:nth-child(3) {
+                position: relative; }
+                header .header nav .main-nav li:first-child .dropdown li:nth-child(3):after {
+                  content: '';
+                  position: absolute;
+                  top: 30%;
+                  right: 10%;
+                  width: 9px;
+                  height: 13px;
+                  background-image: url("../img/dropdown-arrow-right.png"); }
+              header .header nav .main-nav li:first-child .dropdown li a {
+                color: #fff;
+                font-family: Lato;
+                font-size: 10px;
+                font-weight: 300;
+                line-height: 37px;
+                text-transform: none; }
+                @media screen and (max-width: 640px) {
+                  header .header nav .main-nav li:first-child .dropdown li a {
+                    border-bottom: 0; } }
+        header .header nav .main-nav li a {
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: 400;
+          text-transform: uppercase; }
+          @media screen and (min-width: 1600px) {
+            header .header nav .main-nav li a {
+              font-size: 24px; } }
+          header .header nav .main-nav li a:hover {
+            color: #fff; }
+          @media screen and (max-width: 640px) {
+            header .header nav .main-nav li a {
+              border-bottom: 2px solid #ff5722; } }
+  header .header .slider-wrap {
+    width: 100%;
+    overflow: hidden; }
+    header .header .slider-wrap .slider {
+      padding-top: 20%;
+      width: 9999px;
+      transition: margin 1s ease; }
+      header .header .slider-wrap .slider .slider-text {
+        width: 1200px;
+        display: inline-block; }
+        header .header .slider-wrap .slider .slider-text p {
+          width: 80%;
+          color: #fff;
+          font-family: Lato;
+          font-size: 62px;
+          font-weight: 900;
+          text-transform: uppercase; }
+          @media screen and (min-width: 1600px) {
+            header .header .slider-wrap .slider .slider-text p {
+              font-size: 62px; } }
+          @media screen and (max-width: 991px) {
+            header .header .slider-wrap .slider .slider-text p {
+              padding-top: 10%;
+              font-size: 52px;
+              width: 60%; } }
+          @media screen and (max-width: 705px) {
+            header .header .slider-wrap .slider .slider-text p {
+              padding-top: 0%;
+              font-size: 42px;
+              width: 40%; } }
+          @media screen and (max-width: 531px) {
+            header .header .slider-wrap .slider .slider-text p {
+              padding-top: 0;
+              font-size: 32px;
+              width: 30%; } }
+  header .header .slider-btns {
+    margin-top: 50px; }
+    @media screen and (max-width: 640px) {
+      header .header .slider-btns {
+        display: inline-block; } }
+    header .header .slider-btns .btn-left,
+    header .header .slider-btns .btn-right {
+      margin-right: 1px;
+      padding-top: 15px;
+      width: 69px;
+      height: 69px;
+      float: left;
+      background-color: #c4b8ae;
+      opacity: .5;
+      text-align: center;
+      box-sizing: border-box;
+      cursor: pointer; }
+
+header .description {
+  padding-top: 60px;
+  width: 100%;
+  height: 197px;
+  background-color: #ff5722;
+  box-sizing: border-box; }
+  @media screen and (max-width: 767px) {
+    header .description {
+      padding: 60px 10px 0 10px; } }
+  header .description form label {
+    width: 55%;
+    text-align: left;
+    float: left;
+    color: #fff;
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase; }
+    @media screen and (max-width: 640px) {
+      header .description form label {
+        font-size: 20px; } }
+  header .description form button[name=btn] {
+    width: 20%;
+    height: 78px;
+    float: right;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer; }
+    @media screen and (max-width: 640px) {
+      header .description form button[name=btn] {
+        font-size: 20px; } }
+
+main {
+  padding: 129px 0 188px 0; }
+  @media screen and (max-width: 767px) {
+    main {
+      text-align: center; } }
+  main h2 {
+    margin-bottom: 16px;
+    color: #263238;
+    font-family: "Open Sans";
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 300; }
+    main h2 span {
+      font-weight: 700; }
+  main p {
+    margin-bottom: 40px;
+    color: #645f5f;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px; }
+  main .examples {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; }
+    @media screen and (max-width: 992px) {
+      main .examples {
+        grid-template-columns: 50% 50%; } }
+    @media screen and (max-width: 767px) {
+      main .examples {
+        padding-left: 20px;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 30px; } }
+    @media screen and (max-width: 550px) {
+      main .examples {
+        padding: 0;
+        grid-template-columns: 100%; } }
+    @media screen and (max-width: 992px) {
+      main .examples li {
+        margin-bottom: 30px; } }
+    main .examples li img {
+      width: 95%; }
+      @media screen and (max-width: 550px) {
+        main .examples li img {
+          width: 100%; } }
+    main .examples li h4 {
+      margin: 51px 0 10px 0;
+      color: #03a9f4;
+      font-family: "Open Sans";
+      font-size: 30px;
+      font-weight: 700; }
+    main .examples li h5 {
+      color: #211f1f;
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-weight: 700; }
+    main .examples li p {
+      margin-bottom: 31px;
+      width: 95%;
+      color: #211f1f;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 21px; }
+      @media screen and (max-width: 767px) {
+        main .examples li p {
+          width: 100%; } }
+    main .examples li button {
+      width: 146px;
+      height: 49px;
+      background-color: #ff5722;
+      border: 0;
+      color: #fff;
+      font-family: "Open Sans";
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      text-transform: uppercase;
+      cursor: pointer; }

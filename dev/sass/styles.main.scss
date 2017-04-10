@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('../img/main-bg.png');
+}
+.container {
+    margin: 0 auto;
+    @media (max-width:767px) {
+        width:100%;
+    }
+    @media (min-width:768px) {
+        width:750px;
+    }
+    @media (min-width:992px) {
+        width:970px;
+    }
+    @media (min-width:1200px) {
+        width:1170px;
+    }
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #637076;
+}
+.clearfix {
+    clear: both;
+}
+@import "../../node_modules/scss-grid-gen/core";
+@import "vars.scss";
+@import "header.scss";
+@import "main.scss";

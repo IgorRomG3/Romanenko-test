@@ -1,0 +1,90 @@
+main {
+    padding: 129px 0 188px 0;
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
+    h2 {
+        margin-bottom: 16px;
+        color: #263238;
+        font-family: "Open Sans";
+        font-size: 52px;
+        text-transform: uppercase;
+        font-weight: 300;
+        span {
+            font-weight: 700;
+        }
+    }
+    p {
+        margin-bottom: 40px;
+        color: #645f5f;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    .examples {
+        display: grid;
+        grid-template-columns:25% 25% 25% 25%;
+        @media screen and (max-width:992px) {
+            grid-template-columns:50% 50%;
+        }
+        @media screen and (max-width:767px) {
+            padding-left: 20px;
+            grid-template-columns:45% 45%;
+            grid-column-gap:30px;
+        }
+        @media screen and (max-width:550px) {
+            padding: 0;
+            grid-template-columns:100%;
+        }
+        li {
+            @media screen and (max-width:992px) {
+                margin-bottom: 30px;
+            }
+            img {
+                width: 95%;
+                @media screen and (max-width:550px) {
+                    width: 100%;
+                }
+            }
+            h4 {
+                margin: 51px 0 10px 0;
+                color: #03a9f4;
+                font-family: "Open Sans";
+                font-size: 30px;
+                font-weight: 700;
+            }
+            h5{
+                color: #211f1f;
+                font-family: "Open Sans";
+                font-size: 18px;
+                font-weight: 700;
+            }
+            p {
+                margin-bottom: 31px;
+                width: 95%;
+                color: #211f1f;
+                font-family: "Open Sans";
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 21px;
+                @media screen and (max-width:767px) {
+                    width: 100%;
+                }
+            }
+            button {
+                width: 146px;
+                height: 49px;
+                background-color: $orange;
+                border: 0;
+                color: $white;
+                font-family: "Open Sans";
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 21px;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+    }
+}
